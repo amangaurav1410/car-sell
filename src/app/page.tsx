@@ -21,7 +21,7 @@ export default function Home() {
   return (
     <div className="bg-carbon">
       {/* 1️⃣ HERO SECTION */}
-      <section className="relative text-white min-h-screen flex items-center overflow-hidden">
+      <section className="relative text-white h-screen flex items-center overflow-hidden -mt-20 pt-20">
         {/* Background Image */}
         <div className="absolute inset-0">
           <img
@@ -75,7 +75,7 @@ export default function Home() {
             
             {/* Secondary CTA */}
             <motion.a
-              href="/import-now"
+              href="/finance"
               className="border-2 border-[#BDB6AD] text-[#EAE2D6] px-10 py-5 rounded-lg font-bold text-lg hover:bg-[#BDB6AD]/10 transition-all duration-300"
               whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.95 }}
@@ -119,7 +119,8 @@ export default function Home() {
             <h2 className="text-5xl md:text-6xl font-bold font-heading mb-6 text-[#EAE2D6]">
               About Umze Autohaus
             </h2>
-            <div className="w-24 h-1 bg-[#25614F] mx-auto rounded-full"></div>
+            <div className="w-24 h-1 bg-[#25614F] mx-auto rounded-full mb-4"></div>
+            <div className="w-16 h-1 bg-[#25614F]/50 mx-auto rounded-full"></div>
           </motion.div>
 
           {/* Main Content Grid */}
@@ -195,7 +196,7 @@ export default function Home() {
                 </p>
               </motion.div>
 
-              {/* Card 2 - Our Service */}
+              {/* Card 2 - Our Vision */}
               <motion.div
                 className="group bg-[#0F1614] rounded-2xl p-8 border border-[#25614F]/20 hover:border-[#25614F]/50 transition-all duration-500"
                 whileHover={{ y: -5 }}
@@ -203,17 +204,18 @@ export default function Home() {
                 <div className="flex items-start gap-4 mb-4">
                   <div className="w-14 h-14 bg-[#25614F] rounded-xl flex items-center justify-center flex-shrink-0">
                     <svg className="w-7 h-7 text-[#EAE2D6]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
                     </svg>
                   </div>
                   <div>
                     <h3 className="text-2xl font-bold text-[#EAE2D6] mb-3 group-hover:text-[#A88F5C] transition-colors duration-300">
-                      Full Support
+                      Our Vision
                     </h3>
                   </div>
                 </div>
                 <p className="text-[#BDB6AD] leading-relaxed">
-                  We support clients through the full import process — from sourcing and inspections through to shipping, compliance coordination, and delivery — so each step is understood and managed properly.
+                  Helping people import quality cars from Japan safely, transparently, and confidently. We believe in honest advice, real experience, and genuine care for every client.
                 </p>
               </motion.div>
 
@@ -364,9 +366,15 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 4️⃣ PROCESS PREVIEW */}
-      <section className="relative py-32 overflow-hidden bg-carbon">
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10">
+      {/* 4️⃣ PROCESS PREVIEW - Modern Flowing Timeline */}
+      <section className="py-24 bg-[#0F1614] relative overflow-hidden">
+        {/* Flowing Background Elements */}
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute top-0 left-1/4 w-96 h-96 bg-[#25614F] rounded-full blur-3xl"></div>
+          <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-[#25614F] rounded-full blur-3xl"></div>
+        </div>
+
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             className="text-center mb-20"
             initial={{ opacity: 0, y: 30 }}
@@ -385,121 +393,134 @@ export default function Home() {
               <span className="text-[#25614F] font-semibold text-sm uppercase tracking-wider">6-Step Process</span>
             </motion.div>
 
-            <h2 className="text-5xl md:text-6xl font-bold font-heading mb-6 text-[#EAE2D6]">
+            <h2 className="text-4xl md:text-5xl font-bold font-heading mb-6 text-[#EAE2D6]">
               Our Import Process
             </h2>
-            <div className="w-24 h-1 bg-[#25614F] mx-auto rounded-full mb-8"></div>
-            <p className="text-xl text-[#BDB6AD] max-w-3xl mx-auto leading-relaxed">
+            <div className="w-24 h-1 bg-[#25614F] mx-auto rounded-full mb-4"></div>
+            <div className="w-16 h-1 bg-[#25614F]/50 mx-auto rounded-full mb-8"></div>
+            <p className="text-xl text-[#BDB6AD] max-w-2xl mx-auto leading-relaxed">
               Importing a vehicle is a big decision. We guide you through each stage, explain things as we go, and make sure expectations are clear from the start.
             </p>
           </motion.div>
 
-          {/* Process Steps with Connecting Lines */}
-          <div className="relative">
-            {/* Connecting Line - Desktop */}
-            <div className="hidden lg:block absolute top-20 left-0 right-0 h-0.5 bg-[#25614F]/30"
-              style={{ top: '80px', left: '8%', right: '8%' }}
-            ></div>
-
-            <motion.div
-              className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16"
-              variants={staggerContainer}
-              initial="initial"
-              whileInView="animate"
-              viewport={{ once: true }}
-            >
-              {[
-                {
-                  step: '1',
-                  title: 'Consultation & budget guidance',
-                  icon: (
-                    <svg className="w-7 h-7 text-[#EAE2D6]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
-                    </svg>
-                  )
-                },
-                {
-                  step: '2',
-                  title: 'Vehicle sourcing',
-                  icon: (
-                    <svg className="w-7 h-7 text-[#EAE2D6]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                    </svg>
-                  )
-                },
-                {
-                  step: '3',
-                  title: 'Bid approval & deposit',
-                  icon: (
-                    <svg className="w-7 h-7 text-[#EAE2D6]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                  )
-                },
-                {
-                  step: '4',
-                  title: 'Purchase & shipping',
-                  icon: (
-                    <svg className="w-7 h-7 text-[#EAE2D6]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" />
-                    </svg>
-                  )
-                },
-                {
-                  step: '5',
-                  title: 'Customs & compliance support',
-                  icon: (
-                    <svg className="w-7 h-7 text-[#EAE2D6]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                    </svg>
-                  )
-                },
-                {
-                  step: '6',
-                  title: 'Registration assistance & delivery',
-                  icon: (
-                    <svg className="w-7 h-7 text-[#EAE2D6]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
-                  )
-                }
-              ].map((item, index) => (
+          {/* Process Steps - Flowing Alternating Layout */}
+          <div className="max-w-6xl mx-auto space-y-16 mb-20">
+            {[
+              {
+                step: '01',
+                title: 'Consultation & Budget Guidance',
+                description: 'We discuss your needs, budget, and preferences. We explain the import process, timelines, and what to expect at each stage.',
+                icon: (
+                  <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
+                  </svg>
+                )
+              },
+              {
+                step: '02',
+                title: 'Vehicle Sourcing',
+                description: 'We search Japanese auctions for vehicles matching your criteria. We analyse auction sheets, photos, and condition reports.',
+                icon: (
+                  <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                  </svg>
+                )
+              },
+              {
+                step: '03',
+                title: 'Bid Approval & Deposit',
+                description: 'Once you approve a vehicle, we place the bid on your behalf. You pay a deposit to secure the winning bid.',
+                icon: (
+                  <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                )
+              },
+              {
+                step: '04',
+                title: 'Purchase & Shipping',
+                description: 'The vehicle is purchased and prepared for export. We arrange shipping from Japan to an Australian port.',
+                icon: (
+                  <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" />
+                  </svg>
+                )
+              },
+              {
+                step: '05',
+                title: 'Customs & Compliance',
+                description: 'We handle customs clearance, import duties, GST, and coordinate the compliance inspection process.',
+                icon: (
+                  <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                  </svg>
+                )
+              },
+              {
+                step: '06',
+                title: 'Registration & Delivery',
+                description: 'We assist with Victorian registration and arrange delivery of your vehicle to your location.',
+                icon: (
+                  <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                )
+              }
+            ].map((item, index) => {
+              const isEven = index % 2 === 0;
+              return (
                 <motion.div
                   key={index}
-                  className="relative group"
-                  variants={fadeInUp}
-                  whileHover={{ y: -10 }}
+                  className={`flex flex-col md:flex-row items-center gap-8 ${!isEven ? 'md:flex-row-reverse' : ''}`}
+                  initial={{ opacity: 0, x: isEven ? -50 : 50 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6, delay: index * 0.1 }}
                 >
-                  <div className="relative bg-[#0F1614] rounded-2xl p-8 border border-[#25614F]/20 hover:border-[#25614F]/50 transition-all duration-500 h-full">
-                    {/* Step Number Badge */}
-                    <div className="absolute -top-5 -left-5 w-14 h-14 bg-[#25614F] rounded-2xl flex items-center justify-center border-4 border-[#0F1614] group-hover:scale-110 transition-transform duration-300">
-                      <span className="text-[#EAE2D6] text-xl font-bold">{item.step}</span>
+                  {/* Icon Circle - Large and Prominent */}
+                  <motion.div
+                    className="relative flex-shrink-0"
+                    whileHover={{ scale: 1.1, rotate: 5 }}
+                    transition={{ type: "spring", stiffness: 300 }}
+                  >
+                    <div className="relative w-32 h-32 bg-gradient-to-br from-[#25614F] to-[#1e4f3f] rounded-full flex items-center justify-center shadow-2xl">
+                      {/* Glow Effect */}
+                      <div className="absolute inset-0 rounded-full bg-[#25614F] opacity-20 blur-xl"></div>
+                      
+                      {/* Step Number */}
+                      <div className="absolute -top-2 -right-2 w-12 h-12 bg-[#EAE2D6] rounded-full flex items-center justify-center shadow-lg border-4 border-[#0F1614]">
+                        <span className="text-[#25614F] font-bold text-lg">{item.step}</span>
+                      </div>
+                      
+                      {/* Icon */}
+                      <div className="relative z-10 text-[#EAE2D6]">
+                        {item.icon}
+                      </div>
                     </div>
+                    
+                    {/* Connection Line */}
+                    {index < 5 && (
+                      <div className={`hidden md:block absolute top-32 ${isEven ? 'left-1/2' : 'right-1/2'} w-px h-16 bg-gradient-to-b from-[#25614F]/50 to-transparent`}></div>
+                    )}
+                  </motion.div>
 
-                    {/* Icon */}
-                    <div className="w-16 h-16 bg-[#25614F]/20 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-all duration-300 ml-6 mt-2">
-                      {item.icon}
-                    </div>
-
-                    {/* Content */}
-                    <h3 className="text-xl font-bold text-[#EAE2D6] mb-3 group-hover:text-[#A88F5C] transition-colors duration-300">
+                  {/* Content */}
+                  <motion.div
+                    className={`flex-1 ${isEven ? 'md:text-left' : 'md:text-right'} text-center`}
+                    whileHover={{ scale: 1.02 }}
+                    transition={{ type: "spring", stiffness: 300 }}
+                  >
+                    <h3 className="text-3xl font-bold text-[#EAE2D6] mb-4">
                       {item.title}
                     </h3>
-
-                    {/* Progress Indicator */}
-                    <div className="absolute bottom-0 left-0 right-0 h-1 bg-[#25614F]/20 rounded-b-2xl overflow-hidden">
-                      <motion.div
-                        className="h-full bg-[#25614F]"
-                        initial={{ width: 0 }}
-                        whileInView={{ width: '100%' }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 1, delay: index * 0.2 }}
-                      ></motion.div>
-                    </div>
-                  </div>
+                    <div className={`w-20 h-1 bg-[#25614F] rounded-full mb-4 ${isEven ? 'md:mx-0 mx-auto' : 'md:ml-auto mx-auto'}`}></div>
+                    <p className="text-[#BDB6AD] text-lg leading-relaxed max-w-xl">
+                      {item.description}
+                    </p>
+                  </motion.div>
                 </motion.div>
-              ))}
-            </motion.div>
+              );
+            })}
           </div>
 
           {/* CTA Section */}
@@ -510,15 +531,20 @@ export default function Home() {
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            <Link
-              href="/import-process"
-              className="bg-[#25614F] text-[#EAE2D6] px-12 py-5 rounded-xl font-bold text-lg hover:bg-[#1e4f3f] border-2 border-[#25614F]/30 hover:border-[#25614F]/50 transition-all duration-300 inline-flex items-center gap-3 group"
-            >
-              <span>View full process</span>
-              <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-              </svg>
-            </Link>
+            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+              <Link
+                href="/import-process"
+                className="group relative bg-[#25614F] text-[#EAE2D6] px-12 py-5 rounded-full font-bold text-lg hover:bg-[#1e4f3f] transition-all duration-300 inline-flex items-center gap-3 overflow-hidden shadow-xl hover:shadow-2xl"
+              >
+                {/* Animated Background */}
+                <div className="absolute inset-0 bg-gradient-to-r from-[#1e4f3f] to-[#25614F] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                
+                <span className="relative z-10">View full process</span>
+                <svg className="relative z-10 w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                </svg>
+              </Link>
+            </motion.div>
           </motion.div>
         </div>
       </section>
@@ -805,7 +831,7 @@ export default function Home() {
                     whileTap={{ scale: 0.95 }}
                   >
                     <Link
-                      href="/import-now"
+                      href="/finance"
                       className="block w-full text-center bg-[#25614F] text-[#EAE2D6] px-8 py-5 rounded-xl font-bold text-lg hover:bg-[#1e4f3f] border-2 border-[#25614F]/30 hover:border-[#25614F]/50 transition-all duration-300"
                     >
                       Use the calculator →

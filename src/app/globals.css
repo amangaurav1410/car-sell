@@ -23,6 +23,7 @@
   --color-secondary: var(--secondary);
   --color-neutral: var(--neutral);
   --color-accent: var(--accent);
+  --color-gray-900: #0F1614;
   --font-sans: Inter, system-ui, -apple-system, sans-serif;
   --font-heading: Montserrat, system-ui, -apple-system, sans-serif;
 }

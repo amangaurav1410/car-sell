@@ -20,11 +20,13 @@ const Footer = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <div className="flex items-center space-x-3 mb-6">
-              <div className="w-12 h-12 bg-[#25614F] rounded-lg flex items-center justify-center shadow-lg">
-                <span className="text-[#EAE2D6] font-bold text-2xl">U</span>
-              </div>
-              <span className="text-3xl font-bold font-heading">UMZE AUTOHAUS</span>
+            {/* Logo Image */}
+            <div className="mb-6">
+              <img
+                src="/images/PNG.png"
+                alt="UMZE AUTOHAUS Logo"
+                className="h-24 w-auto"
+              />
             </div>
             
             <p className="text-[#BDB6AD] mb-8 leading-relaxed text-lg max-w-xl">
@@ -128,6 +130,7 @@ const Footer = () => {
             <ul className="space-y-3">
               {[
                 { label: 'About Us', href: '/about-us' },
+                { label: 'Blog', href: '/blog' },
                 { label: 'Contact Us', href: '/contact-us' },
                 { label: 'Resources', href: '/resources' },
                 { label: 'Get Started', href: '/import-now' }

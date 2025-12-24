@@ -19,8 +19,8 @@ const Header = () => {
   const navItems = [
     { href: '/', label: 'Home' },
     { href: '/about-us', label: 'About' },
+    { href: '/blog', label: 'Blog' },
     { href: '/import-process', label: 'Our Process' },
-    { href: '/resources', label: 'FAQ' },
     { href: '/finance', label: 'Calculator' },
     { href: '/contact-us', label: 'Contact' },
   ];
@@ -28,15 +28,15 @@ const Header = () => {
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
       isScrolled
-        ? 'bg-[#0F1614] shadow-lg'
+        ? 'bg-[#0F1614]/95 backdrop-blur-md shadow-lg'
         : 'bg-transparent'
     }`}>
       <div className="w-full px-6 lg:px-8">
         <div className="flex justify-between items-center py-6">
           {/* Logo - Left */}
           <div className="flex items-center">
-            <Link href="/" className="text-lg font-bold text-[#EAE2D6]">
-              UMZE AUTOHAUS
+            <Link href="/">
+              <img src="/images/PNG.png" alt="UMZE AUTOHAUS" className="h-24 w-auto" />
             </Link>
           </div>
 
