@@ -67,7 +67,7 @@ export default function Blog() {
       <section className="relative text-white h-screen flex items-center overflow-hidden -mt-20 pt-20">
         <div className="absolute inset-0">
           <img
-            src="https://images.unsplash.com/photo-1553440569-bcc63803a83d?auto=format&fit=crop&w=1920&q=80"
+            src="/images/hero-bg.jpg"
             alt="Japanese vehicle import"
             className="w-full h-full object-cover"
           />
@@ -109,7 +109,7 @@ export default function Blog() {
                 {/* Image */}
                 <div className="relative h-64 md:h-auto">
                   <img
-                    src="https://images.unsplash.com/photo-1519996409143-03b5428835b7?auto=format&fit=crop&w=800&q=80"
+                    src="/images/2007-Mercedes-Benz-S63-AMG-Collecting-Cars-06-08-2025-Ari-Gelgec20.avif"
                     alt="Japanese auction sheet"
                     className="w-full h-full object-cover"
                   />
@@ -158,7 +158,7 @@ export default function Blog() {
                 {/* Image */}
                 <div className="relative h-64 md:h-auto md:order-2">
                   <img
-                    src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=800&q=80"
+                    src="/images/2011-Mercedes-Benz-S63-AMG-L-Collecting-Cars-01-11-2025-Ari-Gelgec23.avif"
                     alt="First-time importer guide"
                     className="w-full h-full object-cover"
                   />
@@ -207,7 +207,7 @@ export default function Blog() {
                 {/* Image */}
                 <div className="relative h-64 md:h-auto">
                   <img
-                    src="https://images.unsplash.com/photo-1494905998402-395d579af36f?auto=format&fit=crop&w=800&q=80"
+                    src="/images/2012-Mercedes-Benz-S63-AMG-Collecting-Cars-26-05-2025-Ari-Gelgec25.avif"
                     alt="Benefits of importing from Japan"
                     className="w-full h-full object-cover"
                   />
@@ -256,7 +256,7 @@ export default function Blog() {
                 {/* Image */}
                 <div className="relative h-64 md:h-auto md:order-2">
                   <img
-                    src="https://images.unsplash.com/photo-1544829099-b9a0c6fd3a04?auto=format&fit=crop&w=800&q=80"
+                    src="/images/2012-Mercedes-Benz-S63-AMG-Collecting-Cars-26-05-2025-Ari-Gelgec75.avif"
                     alt="Common mistakes in importing"
                     className="w-full h-full object-cover"
                   />
@@ -305,7 +305,7 @@ export default function Blog() {
                 {/* Image */}
                 <div className="relative h-64 md:h-auto">
                   <img
-                    src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?auto=format&fit=crop&w=800&q=80"
+                    src="/images/2012-Mercedes-Benz-S63-AMG-Collecting-Cars-26-05-2025-Ari-Gelgec78.avif"
                     alt="Australian import rules"
                     className="w-full h-full object-cover"
                   />

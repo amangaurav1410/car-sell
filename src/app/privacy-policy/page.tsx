@@ -10,7 +10,7 @@ export default function PrivacyPolicy() {
       <section className="relative text-white h-screen flex items-center overflow-hidden -mt-20 pt-20">
         <div className="absolute inset-0">
           <img
-            src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=1920&q=80"
+            src="/images/hero-bg.jpg"
             alt="Privacy Policy"
             className="w-full h-full object-cover"
           />

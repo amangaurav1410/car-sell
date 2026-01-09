@@ -61,7 +61,7 @@ export default function ViewAuctions() {
       <section className="relative text-white min-h-[60vh] flex items-center overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="https://images.pexels.com/photos/164634/pexels-photo-164634.jpeg?auto=compress&cs=tinysrgb&w=1920&q=80"
+            src="/images/hero-bg.jpg"
             alt="Japanese auction houses"
             className="w-full h-full object-cover"
           />

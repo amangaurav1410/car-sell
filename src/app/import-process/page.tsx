@@ -86,7 +86,7 @@ export default function ImportProcess() {
       <section className="relative text-white h-screen flex items-center overflow-hidden -mt-20 pt-20">
         <div className="absolute inset-0">
           <img
-            src="https://images.pexels.com/photos/164634/pexels-photo-164634.jpeg?auto=compress&cs=tinysrgb&w=1920&q=80"
+            src="/images/hero-bg.jpg"
             alt="Import process workflow"
             className="w-full h-full object-cover animate-ken-burns"
           />

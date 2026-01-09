@@ -15,7 +15,7 @@ export default function ContactUs() {
       <section className="relative text-white h-screen flex items-center overflow-hidden -mt-20 pt-20">
         <div className="absolute inset-0">
           <img
-            src="https://images.pexels.com/photos/159304/network-cable-ethernet-computer-159304.jpeg?auto=compress&cs=tinysrgb&w=1920&q=80"
+            src="/images/hero-bg.jpg"
             alt="Contact Umze Autohaus"
             className="w-full h-full object-cover animate-ken-burns"
           />

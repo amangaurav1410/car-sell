@@ -8,9 +8,9 @@ export default function CarListing() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const vehicleImages = [
-    'https://images.unsplash.com/photo-1548802673-380ab8ebc7b7?auto=format&fit=crop&w=800&q=80',
-    'https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?auto=format&fit=crop&w=800&q=80',
-    'https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?auto=format&fit=crop&w=800&q=80',
+    '/images/06 Honda NSX - credit Honda copy.jpg',
+    '/images/2007-Mercedes-Benz-S63-AMG-Collecting-Cars-06-08-2025-Ari-Gelgec20.avif',
+    '/images/2011-Mercedes-Benz-S63-AMG-L-Collecting-Cars-01-11-2025-Ari-Gelgec23.avif',
   ];
 
   const specifications = [
@@ -25,22 +25,22 @@ export default function CarListing() {
     {
       name: '1992 Mitsuoka Dore',
       price: '$74,990',
-      image: 'https://images.unsplash.com/photo-1553440569-bcc63803a83d?auto=format&fit=crop&w=600&q=80',
+      image: '/images/2012-Mercedes-Benz-S63-AMG-Collecting-Cars-26-05-2025-Ari-Gelgec25.avif',
     },
     {
       name: '2023 Lexus IS500 F Sport',
       price: '$88,300',
-      image: 'https://images.unsplash.com/photo-1516026672322-bc5cc9313474?auto=format&fit=crop&w=600&q=80',
+      image: '/images/2012-Mercedes-Benz-S63-AMG-Collecting-Cars-26-05-2025-Ari-Gelgec75.avif',
     },
     {
       name: '2006 Subaru Impreza WRX WR-Limited',
       price: '$26,500',
-      image: 'https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=600&q=80',
+      image: '/images/2012-Mercedes-Benz-S63-AMG-Collecting-Cars-26-05-2025-Ari-Gelgec78.avif',
     },
     {
       name: '2003 Honda Accord CL7 Euro R',
       price: '$18,500',
-      image: 'https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?auto=format&fit=crop&w=600&q=80',
+      image: '/images/2011-Mercedes-Benz-S63-AMG-L-Collecting-Cars-01-11-2025-Ari-Gelgec79.avif',
     },
   ];
 

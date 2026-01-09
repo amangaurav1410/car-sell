@@ -67,7 +67,7 @@ export default function Resources() {
         day: 'numeric'
       }),
       readTime: `${Math.ceil(blog.content.split(' ').length / 200)} min read`, // Estimate read time
-      image: blog.images && blog.images.length > 0 ? blog.images[0] : "https://images.pexels.com/photos/164634/pexels-photo-164634.jpeg?auto=compress&cs=tinysrgb&w=600&q=80"
+      image: blog.images && blog.images.length > 0 ? blog.images[0] : "https://images.pexels.com/photos/112460/pexels-photo-112460.jpeg?auto=compress&cs=tinysrgb&w=600&q=80"
     }));
   };
 
@@ -93,7 +93,7 @@ export default function Resources() {
       <section className="relative text-white min-h-[60vh] flex items-center overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="https://images.pexels.com/photos/159304/network-cable-ethernet-computer-159304.jpeg?auto=compress&cs=tinysrgb&w=1920&q=80"
+            src="/images/hero-bg.jpg"
             alt="Resources and knowledge base"
             className="w-full h-full object-cover"
           />

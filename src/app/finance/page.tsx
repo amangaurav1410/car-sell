@@ -16,7 +16,7 @@ export default function Finance() {
       <section className="relative text-white h-screen flex items-center overflow-hidden -mt-20 pt-20">
         <div className="absolute inset-0">
           <img
-            src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1920&q=80"
+            src="/images/hero-bg.jpg"
             alt="Finance options for vehicle imports"
             className="w-full h-full object-cover"
           />

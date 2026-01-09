@@ -16,7 +16,7 @@ export default function JapaneseAuctionGradingSystem() {
       <section className="relative text-white h-screen flex items-center overflow-hidden -mt-20 pt-20">
         <div className="absolute inset-0">
           <img
-            src="https://images.unsplash.com/photo-1519996409143-03b5428835b7?auto=format&fit=crop&w=1920&q=80"
+            src="/images/hero-bg.jpg"
             alt="Japanese auction grading system"
             className="w-full h-full object-cover animate-ken-burns"
           />
@@ -541,7 +541,7 @@ export default function JapaneseAuctionGradingSystem() {
             >
               <div className="relative h-48">
                 <img
-                  src="https://images.pexels.com/photos/112460/pexels-photo-112460.jpeg?auto=compress&cs=tinysrgb&w=800&q=80"
+                  src="/images/2007-Mercedes-Benz-S63-AMG-Collecting-Cars-06-08-2025-Ari-Gelgec20.avif"
                   alt="Beginner's guide to auction sheets"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />

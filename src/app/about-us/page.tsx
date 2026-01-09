@@ -24,7 +24,7 @@ export default function AboutUs() {
       <section className="relative text-white h-screen flex items-center overflow-hidden -mt-20 pt-20">
         <div className="absolute inset-0">
           <img
-            src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=80"
+            src="/images/hero-bg.jpg"
             alt="Japanese classic car"
             className="w-full h-full object-cover animate-ken-burns"
           />
