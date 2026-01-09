@@ -50,21 +50,9 @@ export default function Resources() {
 
   const eligibilityTools = [
     {
-      name: "SEVIS Eligibility Check",
-      description: "Check if your vehicle qualifies for import",
-      link: "#",
-      icon: "✅"
-    },
-    {
-      name: "RAWS Approval Tool",
-      description: "Roadworthy approval requirements",
-      link: "#",
-      icon: "🛣️"
-    },
-    {
-      name: "Vehicle Compliance Check",
-      description: "Australian standards compliance",
-      link: "#",
+      name: "SEVS Compliance Check",
+      description: "Check vehicle compliance through SEVS list",
+      link: "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVApprovals/",
       icon: "📋"
     }
   ];
@@ -233,7 +221,7 @@ export default function Resources() {
           </motion.h2>
 
           <motion.div
-            className="grid grid-cols-1 md:grid-cols-3 gap-8"
+            className="grid grid-cols-1 max-w-md mx-auto gap-8"
             variants={staggerContainer}
             initial="initial"
             whileInView="animate"
